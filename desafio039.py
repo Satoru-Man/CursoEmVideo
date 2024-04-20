@@ -13,6 +13,7 @@ from datetime import datetime
 anoS = datetime.today().year
 anoI = int(input('informe o ano de nascimento: '))
 prazo = anoS - anoI
+print('Quem nasceu em {} tem {} anos em {}' .format(anoI, prazo, anoS))
 
 if prazo == 18:
     print('estah no ano do alistamento')
