@@ -17,6 +17,7 @@ print('dados formam um triangulo') if triangulo else print('dados nao formam um 
 if triangulo:
     if r1 == r2:
         if r1 == r3:
+            'ou if r1 == r2 == r3:  pode ser usada essa sintaxe'
             print('triangulo equilatero')
         else:
             print('triangulo isosceles')

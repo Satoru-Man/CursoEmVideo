@@ -5,7 +5,7 @@ acordo com a idade:
 - ate 9 anos: Mirim
 - ate 14 anos: infantil
 - ate 19 anos: junior
-- ate 20 anos: senior
+- ate 25 anos: senior
 - acima 20 anos: master
 """
 from datetime import date
@@ -20,7 +20,7 @@ elif lim <= 14:
     print('categoria infantil')
 elif lim <= 19:
     print('categoria junior')
-elif lim <= 20:
+elif lim <= 25:
     print('categoria senior')
 else:
     print('categoria master')
