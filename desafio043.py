@@ -6,7 +6,8 @@ calcule seu IMC e mostre o status de acordo com a tabela abaixo:
 - entre 25 e 30_ sobrepeso
 - acima de 40: obesidade morbida
 """
-peso = float(input('informe o peso: '))
+
+peso = float(input('\33[0;33;44minforme o peso: '))
 altura = float(input('informe a altura: '))
 imc = peso / (altura ** 2)
 print('o IMC calculado eh de {:.2f}'.format(imc))
