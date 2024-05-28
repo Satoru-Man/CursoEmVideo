@@ -12,7 +12,7 @@ print('nro =  {}'.format(num))
 #print(f'{num} x {1} = {num * 1}')
 
 for c in range(1,11):
-    print('{} x {} = {:>2}'.format(num, c, c * num))
+    print('{} x {:2} = {:2}'.format(num, c, c * num))
 
 
 '''

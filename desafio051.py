@@ -1,5 +1,5 @@
 '''
-desenvolva um programa que leai o primeiro termo
+desenvolva um programa que leia o primeiro termo
 e a razao de uma PA.
 No final mostre os 10 primeiros termos
 dessa progressao.
@@ -44,10 +44,16 @@ Onde:
     a1: é o primeiro termo da PA;
     r: é a razão da PA;
     n: é a posição do termo na sequência (n-ésimo termo).''')
-termo = int(input('informe o termo da PA: '))
-razao = int(input('informe a razao da PA: '))
 
-print('Esta e uma PA de termo {}'.format(termo))
+print()
+a1 = int(input('informe o primeiro termo (a1) da PA: '))
+r = int(input('informe a razao da PA: '))
+an = a1 + (10 - 1) * r
 
-for c in range(0, 10, razao):
-    print(' Razao da PA: {}'.format(c))
+print('Esta e uma PA de termo {} e razao {}'.format(a1, r))
+print(f'Esta e uma PA de termo {a1} e razao {r}')
+
+c = a1 - a1
+for c in range(a1, an + r, r):
+    print(c, end='-> ')
+print("FIM")
