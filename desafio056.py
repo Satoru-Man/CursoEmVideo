@@ -35,5 +35,5 @@ for c in range(0, 4):
 mediaIdadeGrupo = mediaIdadeGrupo / 4
 print("Das 4 pessoas informadas:")
 print(f"a media de idade do grupo eh de {mediaIdadeGrupo:2} anos")
-print(f"o nome do homem mais velho eh {nomeHomemMaisVelho}")
+print(f"o nome do homem mais velho eh {nomeHomemMaisVelho} e ele tem {idadeHomemMaisVelho} anos")
 print(f" E {qtdeMulheresMenos20} mulheres tem menos de 20 anos")
