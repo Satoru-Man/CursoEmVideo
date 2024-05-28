@@ -33,7 +33,7 @@ import os
   Argumentos:
     pasta (str): Caminho para a pasta que contém os arquivos.
 """
-
+"""
 # Pasta que contém os arquivos.
 # pasta = "caminho/para/a/pasta"
 pasta = "C:/Users/claud/PycharmProjects/CursoEmVideo/"
@@ -53,3 +53,30 @@ for arquivo in os.listdir(pasta):
         # Renomeia o arquivo.
         # os.rename(os.path.join(pasta, arquivo), os.path.join(pasta, novo_nome))
         print('nome anterior {} ==> nome novo {}'.format(arquivo, novo_nome))
+
+"""
+
+import os
+import re
+
+# Diretório onde estão os arquivos
+diretorio = 'C:/Users/claud/PycharmProjects/CursoEmVideo/'
+
+# Expressão regular para encontrar arquivos que seguem o padrão 'exNNN.py'
+padrao_arquivo = re.compile(r'^ex(\d{3})\.py$')
+
+# Percorrer todos os arquivos no diretório
+for nome_arquivo in os.listdir(diretorio):
+    # Verificar se o arquivo corresponde ao padrão
+    match = padrao_arquivo.match(nome_arquivo)
+    if match:
+        # Extrair o número NNN
+        numero = match.group(1)
+        # Criar o novo nome de arquivo
+        novo_nome = f'desafio{numero}.py'
+        # Caminho completo dos arquivos
+        caminho_antigo = os.path.join(diretorio, nome_arquivo)
+        caminho_novo = os.path.join(diretorio, novo_nome)
+        # Renomear o arquivo
+        os.rename(caminho_antigo, caminho_novo)
+        print(f'Renomeado: {nome_arquivo} -> {novo_nome}')
