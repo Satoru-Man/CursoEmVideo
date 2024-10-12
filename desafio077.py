@@ -29,3 +29,21 @@ def criar_tupla_palavras_aleatorias(numero_palavras=10):
 # Exemplo de uso:
 minha_tupla = criar_tupla_palavras_aleatorias()
 print(minha_tupla)
+
+# imprime as vogais de cada palavra
+vogais = 'aeiouAEIOU'
+for palavra in minha_tupla:
+  print(f'Na palavra {palavra.upper()} temos as vogais ', end='')
+  for letra in palavra:
+    if letra in vogais:
+      print(letra, end=' ')
+  print('')
+
+'''
+  def tem_vogal(s):
+    return any(char in 'aeiouAEIOU' for char in s)
+
+# Exemplo de uso
+texto = "Python"
+print(tem_vogal(texto))  # Saída: True
+'''

@@ -44,20 +44,28 @@ brasileirao_2023 = (
     "Coritiba"
 )
 print('A) os 5 primeiro colocados no campeonato são: ')
+'''
 for i in range(5):
     print(f'{i+1:2} - {brasileirao_2023[i]}')
+'''
+print(f'{brasileirao_2023[0:5]}')
 print('')
 
 print('B) os últimos 4 colocados são:')
+'''
 for i in brasileirao_2023[::-1]:
     if brasileirao_2023.index(i) > 15:
         print(f'{brasileirao_2023.index(i) + 1} - {i}')
+'''
+print(f'{brasileirao_2023[-4:]}')
 print('')
 
 print('C) os times em ordem alfabética são: ')
-sorteado = sorted(brasileirao_2023)
+''' sorteado = sorted(brasileirao_2023)
 for pos, i in enumerate(sorteado):
     print(f'{pos} - {i}')
+'''
+print(f'{sorted(brasileirao_2023)}:')
 print('')
 
 print(f'D) o time São Paulo está na posição {brasileirao_2023.index('São Paulo')+1}')
