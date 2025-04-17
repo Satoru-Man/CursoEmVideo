@@ -10,4 +10,4 @@ while nro != 999:
     total += nro
     cont += 1
     nro = int(input('informe um nro ou 999 para parar: '))
-print(f'Fim: Soma={total} Qtde digitados: {cont}'
+print(f'Fim: Soma={total} Qtde digitados: {cont}')
