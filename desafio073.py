@@ -61,6 +61,7 @@ print(f'{brasileirao_2023[-4:]}')
 print('')
 
 print('C) os times em ordem alfabética são: ')
+
 ''' sorteado = sorted(brasileirao_2023)
 for pos, i in enumerate(sorteado):
     print(f'{pos} - {i}')
@@ -68,4 +69,4 @@ for pos, i in enumerate(sorteado):
 print(f'{sorted(brasileirao_2023)}:')
 print('')
 
-print(f'D) o time São Paulo está na posição {brasileirao_2023.index('São Paulo')+1}')
+print(f'D) o time São Paulo está na posição {brasileirao_2023.index("São Paulo")+1}')
